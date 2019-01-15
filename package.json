@@ -1,0 +1,29 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "FCC Landing Page Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Banhawy/Gneric-Landing-Page.git"
+  },
+  "keywords": [
+    "FCC"
+  ],
+  "author": "Adham El Banhawy",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "3.9.1",
+    "gulp-sass": "^3.0.0",
+    "node-sass": "^4.11.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Banhawy/Gneric-Landing-Page/issues"
+  },
+  "homepage": "https://github.com/Banhawy/Gneric-Landing-Page#readme"
+}
