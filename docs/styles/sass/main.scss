@@ -1,13 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Geo');
-$mobile-breakpoint: 545px;
+$mobile-breakpoint: 800px;
 $header-font: 'Geo',
 'sans serif';
+
+@media screen and (min-width: $mobile-breakpoint) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+
+    aside {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        max-width: 20vw;
+        width: 100%;
+
+        img {
+            height: 20vh;
+            width: 70%;
+            margin: 0 2rem;
+        }
+
+        ul {
+            margin-top: 0;
+        }
+    }
+}
 
 header {
     font-family: $header-font;
 }
 
 #navbar {
+    header {
+        text-align: center;
+        font-size: x-large;
+        margin-right: 2rem;
+    }
 
     a {
         text-decoration: none;
@@ -15,10 +45,11 @@ header {
         font-style: bold;
 
         li {
+            padding: 0.5rem;
+
             &:hover {
-                -webkit-box-shadow: 0px 2px 13px -1px rgba(0, 0, 0, 0.75);
-                -moz-box-shadow: 0px 2px 13px -1px rgba(0, 0, 0, 0.75);
-                box-shadow: 0px 2px 13px -1px rgba(0, 0, 0, 0.75);
+                color: hsla(0, 85%, 51%, 0.76);
+                font-size: large;
             }
 
         }
@@ -27,6 +58,7 @@ header {
     ul {
         list-style: none;
     }
+
 
     @media screen and (max-width: $mobile-breakpoint) {
         header {
@@ -46,6 +78,11 @@ header {
                 padding: 0.5rem;
                 font-family: $header-font;
             }
+        }
+
+        img {
+            width: 90vw;
+            padding: 0.5rem;
         }
 
     }
